@@ -14,7 +14,7 @@ process.on('unhandledRejection', err => {
   const args = process.argv.slice(2);
   
   const scriptIndex = args.findIndex(
-    x => x === 'build' || x === 'start' || x === 'test'
+    x => x === 'build' || x === 'start' || x === 'test' || x === 'backend'
   );
   const script = scriptIndex === -1 ? args[0] : args[scriptIndex];
   const nodeArgs = scriptIndex > 0 ? args.slice(0, scriptIndex) : [];
@@ -22,6 +22,7 @@ process.on('unhandledRejection', err => {
   switch (script) {
     case 'build':
     case 'start':
+    case 'backend':
     case 'test': {
       const result = spawn.sync(
         'node',
