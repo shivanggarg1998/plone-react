@@ -5,7 +5,8 @@
     "scripts": {
       "start": "plone-react start",
       "build": "plone-react build",
-      "test": "plone-react test"
+      "test": "plone-react test",
+      "install:backend": "plone-react backend"
     }
   }
   
