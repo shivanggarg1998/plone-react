@@ -6,7 +6,8 @@
       "start": "plone-react start",
       "build": "plone-react build",
       "test": "plone-react test",
-      "install:backend": "plone-react backend"
+      "install:backend": "plone-react backend",
+      "run:backend": "plone-react runBackend"
     }
   }
   
